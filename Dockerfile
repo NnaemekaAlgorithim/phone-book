@@ -16,4 +16,4 @@ COPY . .
 # Collect static files
 RUN python3 manage.py collectstatic --noinput
 
-CMD ["/bin/sh", "-c", "python3 manage.py migrate && gunicorn phone_book.phone_book.wsgi:application --bind 0.0.0.0:8000"]
+CMD ["/bin/sh", "-c", "python3 manage.py migrate && gunicorn phone_book.phone_book.wsgi:application --bind 0.0.0.0:8080"]

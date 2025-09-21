@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Phone Book
+Comment=Start the Phone Book app
+Exec=sh -c 'cd "$(dirname "%k")" && ./start.sh'
+Icon=phonebook-icon.png
+Terminal=true
+Categories=Utility;
